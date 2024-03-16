@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { expect, userEvent, waitFor, within } from "@storybook/test";
 
-import Page from "../../page";
+import Page from "../page";
 import { errorHandler } from "@/mocks/handlers/todos/addTodo";
 
 const meta = {
@@ -40,13 +40,6 @@ export const Success: Story = {
 
 export const Failure: Story = {
   name: "失敗",
-  parameters: {
-    msw: {
-      handlers: {
-        addTodo: errorHandler,
-      },
-    },
-  },
   play: async (context) => {
     const canvas = within(context.canvasElement);
 
