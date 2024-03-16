@@ -8,17 +8,21 @@ const config: Config = {
     "./stories/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    opacity: {
+      disabled: "0.38",
+    },
     container: {
       center: true,
     },
     extend: {
       textColor: {
+        active: "rgba(0, 0, 0, 0.54)",
         disabled: "rgba(0, 0, 0, 0.38)",
       },
       colors: {
-        background: {
-          paper: "#f5f5f5",
-        },
+        hover: "rgba(0, 0, 0, 0.04)",
+        disabled: "rgba(0, 0, 0, 0.12)",
+        background: { paper: "#f5f5f5", DEFAULT: "#fff" },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

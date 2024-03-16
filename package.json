@@ -11,11 +11,12 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
-    "@radix-ui/react-toast": "^1.1.5",
+    "@tanstack/react-query": "^5.28.4",
+    "axios": "^1.6.8",
     "clsx": "^2.1.0",
     "next": "14.1.3",
+    "notistack": "^3.0.1",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -38,13 +39,18 @@
     "eslint": "^8",
     "eslint-config-next": "14.1.3",
     "eslint-plugin-storybook": "^0.8.0",
-    "msw": "^1.3.3",
-    "msw-storybook-addon": "^1.10.0",
+    "msw": "^2.2.4",
+    "msw-storybook-addon": "^2.0.0--canary.122.06f0c92.0",
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.12",
     "storybook": "^8.0.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
