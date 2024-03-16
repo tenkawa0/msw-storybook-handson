@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { useSnackbar } from "notistack";
-import { TrashIcon } from "@heroicons/react/20/solid";
+import { XCircleIcon } from "@heroicons/react/20/solid";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 
@@ -44,7 +44,7 @@ export default function DeleteButton({ todo }: Props) {
       onClick={() => mutate({ id: todo.id })}
       disabled={isPending}
     >
-      <TrashIcon className="size-5" aria-hidden="true" />
+      <XCircleIcon className="size-5" aria-hidden="true" />
     </button>
   );
 }
