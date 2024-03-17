@@ -54,18 +54,16 @@ MSWとStorybookを活用することで、この「Integration」のテストが
 
 ## 本題
 
-概要が分かったところで、MSWとStorybookで一体どんなことができるのか完成形を見てみましょう。
+概要が分かったところで、実際にIntegrationテストを作り方を見てみましょう。<br/>
+テストコードといえばCLI上でコマンドを実行するイメージがあると思いますが、Storybookではテストが実行される様をStoryとして表示することが可能です。
 
-- http://localhost:6006/?path=/story/work-step1-play-function-sample--add-todo
-- http://localhost:6006/?path=/story/work-step1-play-function-sample--delete-todo
+- [Todoを追加するテスト](http://localhost:6006/?path=/story/work-step1-storybook%E3%81%AEplay-function%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E6%93%8D%E4%BD%9C%E3%82%92%E3%83%86%E3%82%B9%E3%83%88%E3%81%99%E3%82%8B-sample--add-todo)
+- [Todoを削除するテスト](http://localhost:6006/?path=/story/work-step1-storybook%E3%81%AEplay-function%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E6%93%8D%E4%BD%9C%E3%82%92%E3%83%86%E3%82%B9%E3%83%88%E3%81%99%E3%82%8B-sample--delete-todos)
 
-ご覧の通り、Storybook上で「Todoを追加するテスト」が実行されていく様を確認することができます。<br/>
-従来のテストはCLI上で実行するので、テストコードを実行した結果、画面がどのように操作されるのかは見ることができなかったのですが、Storybookがそれを可能にしています。<br/>
 これはテストコードの書きやすさにもつながるし、なによりこのテストコードがそのままシステムのドキュメントにもなります。<br/>
 もちろんCLI上でテストを実行することもできるので、CIに組み込むこともできますよ！<br/>
 
-では、このテストコードはどうやって作成するのかを順番に見ていましょう！<br/>
-ここからは実際に画面でライブコーディングしながら説明していきます。
+次のパートから実際に画面でライブコーディングしながらテストコードの作成方法を説明していきます。
 
 <br/>
 
